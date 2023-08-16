@@ -1,0 +1,45 @@
+body{
+    overflow: hidden;
+    margin: 0;
+}
+.index{
+    width: 1920px;
+    height: 1080px;
+    background-image: url("../imgs/bgindex.jpg");
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.config{
+    height: 80px;
+    width: 80px;
+    position: absolute;
+    right: 3%;
+    top: 5px;
+    background-color: white;
+    border-color: white;
+    border-radius: 100%;
+    border-width: 1rem;
+    border-style: solid;
+}
+.title{
+    font-family: 'Red Hat Text';
+    font-size: 4rem;
+}
+.menu{
+    list-style: none;
+}
+.menu li{
+    text-decoration: none;
+    font-family: 'Red Hat Text';
+    padding: 1rem;
+    background-color: rgb(0, 0, 255);
+    border-radius: 20%;
+    margin-bottom: 20px;
+}
+.menu a{
+    text-decoration: none;
+    color: white;
+}
