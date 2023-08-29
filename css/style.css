@@ -1,6 +1,10 @@
 @font-face {
-    font-family: Monster;
+    font-family: 'Monster';
     src: url("../fonts/Melted Monster.ttf");
+}
+@font-face {
+    font-family: 'Red Hat Text';
+    src: url("../fonts/RedHatText.ttf");
 }
 body{
     overflow: hidden;
@@ -13,13 +17,21 @@ a:hover{
     text-decoration: none;
 }
 h1, h2, h3, h4, h5, p{
-    font-family: "Red Hat Text";
+    font-family: 'Red Hat Text';
 }
-
+.title{
+    font-family: 'Monster';
+    font-size: 6rem;
+}
+.subtitle{
+    font-family: 'Red Hat Text';
+    color: black;
+    -webkit-text-stroke: 2px white;
+}
 /*INDEX*/
 .index{
     width: 100%;
-    height: 1080px;
+    height: 100%;
     background-image: url("../imgs/bgindex.jpg");
     background-size: cover;
     display: flex;
@@ -56,10 +68,6 @@ h1, h2, h3, h4, h5, p{
     right: 3%;
     top: 3%;
 }
-.title{
-    font-family: 'Monster';
-    font-size: 6rem;
-}
 .menu{
     display: flex;
     flex-direction: column;
@@ -70,6 +78,7 @@ h1, h2, h3, h4, h5, p{
 .menu li{
     text-decoration: none;
     font-family: 'Red Hat Text';
+    font-weight: 700;
     padding: 1rem;
     background-color: rgb(0, 0, 255);
     border-radius: 20%;
@@ -105,4 +114,83 @@ h1, h2, h3, h4, h5, p{
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+}
+
+.tooltiptext{
+    color: aqua;
+}
+label{
+    font-family: 'Red Hat Text';
+    color: rgb(255, 255, 255);
+}
+
+/* Pantalla de juego */
+.juego{
+    background-image: url("../imgs/bgindex.jpg");
+    width: 100%;
+    height: 1080px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#enunciado{
+    font-size: 4rem;
+}
+.puntos{
+    width: 15%;
+    position: absolute;
+    right: 85%;
+    top: 3%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.boxpuntos{
+    padding-inline: 1.2rem;
+    background-color: rgba(255, 179, 39, 0.74);
+    border: 3px orange solid;
+}
+.column
+{
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.respuestas{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    height: 20%;
+    width: 40%;
+    margin: 0;
+}
+.lineres{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.res{
+    width: 8rem;
+    height: 3rem;
+    border-radius: 1rem;
+    font-family: 'Red Hat Text';
+    font-weight: 500;
+    font-size: larger;
+}
+
+.imgpregunta{
+    width: 30%;
+    border-radius: 20%;
+}
+
+/* Creditos */
+
+.creditos{
+    height: 1080px;
+    width: 100%;
 }
