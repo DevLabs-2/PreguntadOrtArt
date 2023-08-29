@@ -191,6 +191,13 @@ label{
 /* Creditos */
 
 .creditos{
-    height: 1080px;
+    background-image: url("../imgs/bgindex.jpg");
+    background-position-x: 40%;
+    background-position-y: 35%;
+    height: 100%;
     width: 100%;
+}
+.card{
+    border-radius: 100%;
+    
 }
