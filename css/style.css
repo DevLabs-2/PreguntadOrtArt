@@ -240,15 +240,36 @@ label{
 /* Creditos */
 
 .creditos{
-    background-image: url("../imgs/bgindex.jpg");
-    background-position-x: 40%;
-    background-position-y: 35%;
-    height: 100%;
+    height: 1080px;
     width: 100%;
+    background-image: url("../imgs/bgindex.jpg");
+    background-repeat: no-repeat;
+    background-position-x: 50%;
+    background-position-y: 20%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
 }
-.card{
+.redessociales{
+    height: 3.5%;
+    width: 7%;
+    position: fixed;
+}
+.profile{
+    width: 500px;
+    height: 500px;
     border-radius: 100%;
-    
+}
+.cardleft{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.cardright{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
 }
 
 /* Fin */
