@@ -288,9 +288,13 @@ label{
 .volver{
     color: black;
     text-decoration: none;
-    margin-top: 8rem;
+
     padding: 1rem;
     background-color: white;
     border-radius: 1rem;
     border: 2px solid black;
+}
+
+#porcentaje{
+    font-size: 9rem;
 }
